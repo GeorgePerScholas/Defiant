@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>U.S.S. Defiant - Specs</title>
+	<link rel="stylesheet" type="text/css" href="../scripts/style.css">
+</head>
+<body style="background-color: black;">
+<audio id="beep" autoplay> <!-- this is the Trek sound on loop to give it the Star Fleet feel -->
+		<source src="../sounds/bridge-beep.mp3" type="audio/mpeg">
+		<script>
+	 		var vid = document.getElementById("beep");
+			vid.loop = true;
+		</script>
+	</audio>
+
+<div class="header">
+		<div class="leftCap"><img src="../images/elements/leftCap.png" style="height: 40px;"></div>
+		<div class="trekCap3"><span>451286</span></div>
+		<div class="trekCap2"><span>802350</span></div>
+		<div class="cap"><span>U.S.S. DEFIANT - SPECS</span></div>
+		<div class="rightCap"><img src="../images/elements/rightCap.png" style="height: 40px;"></div>
+</div>
+
+
+<div class="main">
+
+<div class="left">
+	<img src="../images/elements/topRight.png" style="width: 175px;">
+		<div class="buttonHold">
+			<button id="trek5">458923</button>
+			<!-- <div id="trek5">Phasers</div> -->
+			<button id="trek6">658732</button>       
+		</div>
+	<img src="../images/defiant-top.png" style="width: 175px;">
+		<div class="buttonHold">
+			<button id="trek6">149675</button>
+			<button id="trek5">952041</button>
+		</div>
+	<center><button id="myTorp">DISPLAY FEATURES</button></center>
+	<img src="../images/elements/leftBrace.png" style="width: 175px; margin-top: 5px;">
+	</div>
+
+
+	<div class="right">
+	<img src="../images/elements/topLeft.png" style="width: 175px;">
+	<div id="trek3"></div>
+	<div id="trek2"><center><p><button id="activate" onclick="myMove(); playSound()";>Activate</button>
+
+	</p></center></div>
+	<div id="trek3"></div>
+	<div id="trek4"></div>
+	<div id="trek2"></div>
+	<img src="../images/elements/leftBrace.png" style="width: 175px;">
+	
+	</div>
+
+	<div class="viewer3">
+	<div id="board">	<!-- <img src="../images/defiant-okudagram.jpg" style="width: 600px;"> -->
+		<div id="scan"></div>
+
+	</div>
+
+	<p>Although it was designed to be fast and highly maneuverable with powerful weaponry, the <i>Defiant</i> was '<i>overgunned and overpowered</i>' for a vessel of its size. The ship's structural integrity field needed extensive modifications to keep the Defiant from tearing itself apart. The ship was designed specifically for battle, featuring innovative pulse-phaser cannons and quantum torpedo armaments, in addition to photon torpedoes, standard phasers and a high-capacity deflector shield system. Another asset are its ablative armour, enabling the ship to sustain multiple hits from enemy weapons, even with the shields inoperable, with minimal damage. Inside, the <i>Defiant</i> is relatively spartan by Starfleet standards, the ship is not designed to carry family members, has no science labs or holodecks, and has a limited infirmary. Crew quarters consist of two bunk beds and a general computer interface. Listed below are the <i>Defiant</i>'s most notable features:</p>
+
+	<ul style="font-size: 24px;">
+		<li>PULSE PHASERS</li>
+		<li>QUANTUM TORPEDOES</li>
+		<li>WARP DRIVE</li>
+		<li>CLOAKING DEVICE</li>
+	</ul><br>
+	<p> To see these functions in action click on the DISPLAY FEATURES button. 
+
+
+
+
+	</div>
+
+</div>
+	</div>
+
+<!-- modal button -->
+
+<div id="myBoard" class="modal">
+  
+  <div class="modal-content">
+   
+
+  <div class="left">
+  <img src="../images/elements/topLeft.png" style="width: 175px;"><br>
+  <div class="buttonHold">
+  <img src="../images/elements/backButton.png" onclick="spinShip(-1)" style="height: 150px;">
+  <img src="../images/elements/nextButton.png" onclick="spinShip(1)" style="height: 150px;"></div>
+  <img src="../images/elements/leftBrace.png" style="width: 175px;">
+  
+  </div>
+
+  <div class="right" style="order: 3;">
+  <span class="close">&times;</span>
+  </div>
+
+
+<div style="order: 2;">
+<figure class="shipSlides">
+<figcaption>
+<h2>QUANTUM TORPEDOES</h2>
+<center>
+<img src="../images/ship/torpedo.gif" style="height: 300px;">
+</center>
+<p>Quantum torpedo are a tactical quantum weapon deployed aboard starships that utilized a plasma warhead. The quantum warhead relies on rapid energy extraction from zero-point vacuum. This is established from an 11-dimensional space-time membrane, twisted into a Genus-1 topology string, housed inside the ultraclean vacuum of a 1.38 meter-long teardrop shaped zero-point field reaction chamber. It expands the membrane and pinches it out of the background vacuum and forms into subatomic particles accompanied by a high-explosive energy release. </p>
+</figcaption>
+</figure>
+
+
+<figure class="shipSlides">
+<figcaption>
+<h2>PULSE PHASERS</h2>
+<center>
+<img src="../images/ship/phaser.gif" style="height: 300px;">
+</center>
+<p>First introduced in the Defiant-class starship, the <i>Defiant</i> phaser cannons are multi-targeting phaser banks. The four cannons are usually seen firing phaser bolts simultaneously in short rapid-fire bursts and in only one direction. The cannons can also fire beams. Against Jem'Hadar fighters, the combined firepower of the four phaser cannons of the Defiant exceeded the firepower of two wing-mounted disruptor cannons of a Klingon Bird-of-Prey.</p>
+</figcaption>
+</figure>
+
+<figure class="shipSlides">
+<figcaption>
+<h2>WARP DRIVE</h2>
+<center>
+<img src="../images/ship/warp.gif" style="height: 300px;">
+</center>
+<p>Warp drive is the technology that allows space travel at faster-than-light speeds. It works by generating warp fields to form a subspace bubble that enveloped the starship, distorting the local spacetime continuum and moving the starship at velocities that can greatly exceed the speed of light. These velocities are referred to as warp factors. Warp drive is the most common form of interstellar propulsion used in the Milky Way Galaxy, making interstellar exploration, commerce, and warfare possible.</p>
+</figcaption>
+</figure>
+
+<figure class="shipSlides">
+<figcaption>
+<h2>CLOAKING DEVICE</h2>
+<center>
+<img src="../images/ship/cloak.gif" style="height: 300px;">
+</center>
+<p> A cloaking device, also known as cloaking system or invisibility screen, is a form of stealth technology that uses selective bending of light (and other forms of energy) to render a starship or other object completely invisible to the electromagnetic spectrum and most sensors. The <i>Defiant</i> is the only Federation Starship equipped with a cloaking device. </p>
+</figcaption>
+</figure>
+</div>
+</div>
+
+</div>
+
+
+
+<script>
+  var shipImages = 1;
+  defiantShip(shipImages);
+
+  function spinShip(x) {
+    defiantShip(shipImages += x);
+  }
+  
+  function defiantShip(x) {
+    var y;
+    var z = document.getElementsByClassName("shipSlides");
+    if (x > z.length) {shipImages = 1}
+    if (x < 1) {shipImages = z.length}
+    for (y = 0; y < z.length; y++) {
+      z[y].style.display = "none";
+    }
+      z[shipImages-1].style.display ="block";
+    
+  }
+
+</script>
+
+<script>
+var modal = document.getElementById('myBoard');
+var btn = document.getElementById("myTorp");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="navbarbottom">
+			<img src="../images/elements/leftCap.png" style="height: 30px;">
+				<div id="buttonReg"><a href="about.html">ABOUT</a></div>
+				<div id="buttonReg"><a href="record.html">SERVICE RECORD</a></div>
+				<div id="buttonReg"><a href="tour.html">TOUR</a></div>
+				<div id="buttonReg"><a href="specs.html">SPECS</a></div>
+				<div id="buttonReg"><a href="crew.html">CREW</a></div>
+				<div id="buttonReg"><a href="logs.html">LOGS</a></div>
+				<div id="buttonReg"><a href="../index.html">EXIT</a></div>
+			<img src="../images/elements/rightCap.png" style="height: 30px;">
+	</div>
+
+</div>
+
+</div>
+
+
+<audio id="audio" src="../sounds/computerbeep_2.mp3"></audio>
+
+<script type="text/javascript">
+
+	function myMove(){
+		var audio = document.getElementById('audio');
+		var elem = document.getElementById('scan');
+		var pos = 0;
+		var id = setInterval(frame, 5);
+		audio.play();
+		function frame(){
+			if (pos==585){
+				clearInterval(scan);
+			} else {
+				pos++;
+				elem.style.left = pos + 'px';
+				} 
+		} 
+		
+    
+}
+		// myMove.loop ==true;
+
+</script>
+
+
+
+
+
+</body>
+</html>

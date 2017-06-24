@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>U.S.S. Defiant (NX-74205)</title>
+	<link rel="stylesheet" type="text/css" href="scripts/style.css">	
+	<style type="text/css">@import url('https://fonts.googleapis.com/css?family=Droid+Sans');</style>
+
+</head>
+<body style="background-color: black;">
+
+
+<!-- <audio id="beep" autoplay>
+		<source src="sounds/bridge-beep.mp3" type="audio/mpeg">
+		<script>
+		 	var vid = document.getElementById("beep");
+			vid.loop = true;
+		</script>
+	</audio>
+ -->
+<!-- this is the Trek sound on loop to give it the Star Fleet feel -->	
+<!-- <audio id="beep" autoplay> 
+		<source src="../sounds/bridge-beep.mp3" type="audio/mpeg">
+		<script>
+	 		var vid = document.getElementById("beep");
+			vid.loop = true;
+		</script>
+	</audio>
+ -->
+
+<audio id="audio" src="sounds/computerbeep_2.mp3"></audio>
+
+
+<div class="main">
+	<div class="center">
+		<div class="buttonIndex">
+		<div id="button" onclick="myBeep()"><a href="pages/about.html"><h1>ENTER</h1></a></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- Difant gif from http://www.cfmatrix.us/Star_Trek/Star_Trek2.html -->
+<center><p style="font-size: 11px;">STAR TREK, images and related marks are trademarks of CBS Studios Inc. Star Trek: Deep Space Nine and Star Trek are all registered trademarks of CBS Corporation. <br><br>This is in no way affiliated with or endorsed by CBS. The use of this site is for a class project only.<br><br>
+Most of the text, images and video for this project were found on <a href="http://www.startrek.com/">StarTrek.com</a>, <a href="http://memory-alpha.wikia.com/wiki/Portal:Main">MemoryAlpha.com</a> and <a href="https://www.youtube.com/">YouTube.com</a></p>
+
+</center>
+
+<script type="text/javascript">
+	function myBeep(){
+		var audio = document.getElementById('audio');
+		audio.play();
+	}
+
+</script>
+
+
+
+</body>
+</html>

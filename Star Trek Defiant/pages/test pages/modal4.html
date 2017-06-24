@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /*<link rel="stylesheet" type="text/css" href="../scripts/style.css">*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+}
+/* Modal Content */
+.modal-content {
+    
+    display:flex;
+    flex-direction: row;
+    flex:3;
+    background-color: rgb(0,0,0);
+    color: white;
+    margin: auto;
+    padding: 20px;
+    width: 800px;
+    border-radius: 5%;
+}
+/* The Close Button */
+.close {
+    color: rgb(256,256,256);
+    
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h2>Specs</h2>
+
+<!-- Trigger/Open The Modal -->
+<!-- myBtn -->
+<!-- modal button -->
+<button id="myTorp">DISPLAY FEATURES</button>
+
+
+<div id="myModal" class="modal">
+  
+  <div class="modal-content">
+   
+
+  <div class="left">
+  <img src="../images/elements/topLeft.png" style="width: 175px;"><br>
+  <div class="buttonHold">
+  <img src="../images/elements/backButton.png" onclick="spinShip(-1)" style="height: 150px;">
+  <img src="../images/elements/nextButton.png" onclick="spinShip(1)" style="height: 150px;"></div>
+  <img src="../images/elements/leftBrace.png" style="width: 175px;">
+  
+  </div>
+
+  <div class="right" style="order: 3;">
+  <span class="close">&times;</span>
+  </div>
+
+
+
+<figure class="shipSlides">
+<figcaption>
+<h2>QUANTUM TORPEDOES</h2>
+<center>
+<img src="../images/ship/torpedo.gif" style="width: 300px;">
+</center>
+<p>Quantum torpedo are a tactical quantum weapon deployed aboard starships that utilized a plasma warhead. The quantum warhead relies on rapid energy extraction from zero-point vacuum. This is established from an 11-dimensional space-time membrane, twisted into a Genus-1 topology string, housed inside the ultraclean vacuum of a 1.38 meter-long teardrop shaped zero-point field reaction chamber. The detonation of a photon torpedo warhead, enriched with fluoronetic vapor, inside the torpedo powers a continuum distortion emitter. It expands the membrane and pinches it out of the background vacuum. The membrane forms into subatomic particles accompanied by a high-explosive energy release. </p>
+</figcaption>
+</figure>
+
+
+<figure class="shipSlides">
+<figcaption>
+<h2>PULSE PHASERS</h2>
+<center>
+
+<img src="../images/ship/phaser.gif" style="width: 300px;">
+
+</center>
+<p>First introduced in the Defiant-class starship, the <i>Defiant</i> phaser cannons are multi-targeting phaser banks. The four cannons are usually seen firing phaser bolts simultaneously in short rapid-fire bursts and in only one direction. The cannons can also fire beams. Against Jem'Hadar fighters, the combined firepower of the four phaser cannons of the Defiant exceeded the firepower of two wing-mounted disruptor cannons of a Klingon Bird-of-Prey.</p>
+</figcaption>
+</figure>
+
+<figure class="shipSlides">
+<figcaption>
+<h2>WARP DRIVE</h2>
+<center>
+
+<img src="../images/ship/warp.gif" style="width: 300px;">
+
+</center>
+<p>Warp drive is the technology that allows space travel at faster-than-light speeds. It works by generating warp fields to form a subspace bubble that enveloped the starship, distorting the local spacetime continuum and moving the starship at velocities that can greatly exceed the speed of light. These velocities are referred to as warp factors. Warp drive is the most common form of interstellar propulsion used in the Milky Way Galaxy, making interstellar exploration, commerce, and warfare possible.</p>
+
+</figcaption>
+</figure>
+
+<figure class="shipSlides">
+<figcaption>
+<h2>CLOAKING DEVICE</h2>
+<center>
+
+<img src="../images/ship/cloak.gif" style="width: 300px;">
+
+</center>
+<p> A cloaking device, also known as cloaking system or invisibility screen, is a form of stealth technology that uses selective bending of light (and other forms of energy) to render a starship or other object completely invisible to the electromagnetic spectrum and most sensors. </p>
+</figcaption>
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+</div>
+
+
+
+<script>
+  var shipImages = 1;
+  defiantShip(shipImages);
+
+  function spinShip(x) {
+    defiantShip(shipImages += x);
+  }
+  
+  function defiantShip(x) {
+    var y;
+    var z = document.getElementsByClassName("shipSlides");
+    if (x > z.length) {shipImages = 1}
+    if (x < 1) {shipImages = z.length}
+    for (y = 0; y < z.length; y++) {
+      z[y].style.display = "none";
+    }
+      z[shipImages-1].style.display ="block";
+    
+  }
+
+</script>
+
+<script>
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myTorp");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+</body>
+</html>

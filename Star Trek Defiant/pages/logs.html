@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>U.S.S. Defiant - Logs</title>
+	<link rel="stylesheet" type="text/css" href="../scripts/style.css">
+</head>
+<body style="background-color: black;">
+<audio id="beep" autoplay> <!-- this is the Trek sound on loop to give it the Star Fleet feel -->
+		<source src="../sounds/bridge-beep.mp3" type="audio/mpeg">
+		<script>
+	 		var vid = document.getElementById("beep");
+			vid.loop = true;
+		</script>
+	</audio>
+
+<div class="header">
+		<div class="leftCap"><img src="../images/elements/leftCap.png" style="height: 40px;"></div>
+		<div class="trekCap3"><span>451286</span></div>
+		<div class="trekCap2"><span>802350</span></div>
+		<div class="cap"><span>U.S.S. DEFIANT - LOGS</span></div>
+		<div class="rightCap"><img src="../images/elements/rightCap.png" style="height: 40px;"></div>
+</div>
+
+
+<div class="main">
+
+<div class="right">
+	<img src="../images/elements/topRight.png" style="width: 175px;">
+		<div class="buttonHold">
+			<button id="trek5">368256</button>
+			<!-- <div id="trek5">Phasers</div> -->
+			<button id="trek6">897364</button>       
+		</div>
+	<img src="../images/defiant-top.png" style="width: 175px;">
+		<div class="buttonHold">
+			<button id="trek6">910247</button>
+			<button id="trek5">528199</button>
+		</div>
+	<center><button id="display">786653</button></center>
+	<img src="../images/elements/leftBrace.png" style="width: 175px; margin-top: 5px;">
+	</div>
+
+
+	<div class="left">
+	<img src="../images/elements/topRight.png" style="width: 175px;">
+	<div id="trek3">958462</div>
+	<div id="trek2">864253</div>
+	<div id="trek3">283719</div>
+	<div id="trek4">426850</div>
+	<div id="trek2">973105</div>
+	<img src="../images/elements/rightBrace.png" style="width: 175px;">
+	
+	</div>
+
+	<div class="viewer2">
+
+	<h3>To truly appreciate the need and power of the <i>Defiant</i>, you need to see her in action. The follow visual log entries have been de-classified for your viewing. </h3>
+ 
+
+		
+	<iframe width="360" height="115" src="https://www.youtube.com/embed/e3cYO-vlTpk" frameborder="0" allowfullscreen>First Battle</iframe>
+
+	<iframe width="360" height="115" src="https://www.youtube.com/embed/o-P6L5JGf24" frameborder="0" allowfullscreen></iframe>
+
+	<iframe width="360" height="115" src="https://www.youtube.com/embed/uZPzg8_jZyQ" frameborder="0" allowfullscreen></iframe>
+
+	<iframe width="360" height="115" src="https://www.youtube.com/embed/RGGmZnV_hx4" frameborder="0" allowfullscreen></iframe>
+
+	<iframe width="360" height="115" src="https://www.youtube.com/embed/mUcDzTGBEFM" frameborder="0" allowfullscreen></iframe>
+
+
+	<iframe width="360" height="115" src="https://www.youtube.com/embed/E-aelI7fAF4" frameborder="0" allowfullscreen></iframe>
+
+
+	</div>
+
+</div>
+	<div class="navbarbottom">
+			<img src="../images/elements/leftCap.png" style="height: 30px;">
+				<div id="buttonReg"><a href="about.html">ABOUT</a></div>
+				<div id="buttonReg"><a href="record.html">SERVICE RECORD</a></div>
+				<div id="buttonReg"><a href="tour.html">TOUR</a></div>
+				<div id="buttonReg"><a href="specs.html">SPECS</a></div>
+				<div id="buttonReg"><a href="crew.html">CREW</a></div>
+				<div id="buttonReg"><a href="logs.html">LOGS</a></div>
+				<div id="buttonReg"><a href="../index.html">EXIT</a></div>
+			<img src="../images/elements/rightCap.png" style="height: 30px;">
+	</div>
+
+</div>
+
+
+<audio id="audio" src="../sounds/computerbeep_2.mp3"></audio>
+
+<script type="text/javascript">
+
+	function myMove(){
+		var audio = document.getElementById('audio');
+		var elem = document.getElementById('scan');
+		var pos = 0;
+		var id = setInterval(frame, 5);
+		audio.play();
+		function frame(){
+			if (pos==585){
+				clearInterval(scan);
+			} else { 
+				pos++;
+				elem.style.left = pos + 'px';
+				} 
+		} 
+		
+    
+}
+		// myMove.loop ==true;
+
+</script>
+
+
+
+
+
+</body>
+</html>
